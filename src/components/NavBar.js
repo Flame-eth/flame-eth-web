@@ -9,6 +9,7 @@ import github from "../assets/img/github1.svg";
 import twitter from "../assets/img/twitter.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import "./styles/Navbar.css";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -41,8 +42,8 @@ export const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+        <Navbar.Collapse id="basic-navbar-nav" className="nFold">
+          <Nav className="ms-auto nText">
             <Nav.Link
               href="#home"
               className={
@@ -69,7 +70,7 @@ export const NavBar = () => {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            <div className="social-icon">
+            <div className="social-icon nIcons">
               <a
                 href="https://www.linkedin.com/in/ephraim-o-oladepo/"
                 target="blank">

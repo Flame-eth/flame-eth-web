@@ -124,7 +124,6 @@ export const Projects = () => {
                   <p>
                     I have worked on a number of projects, both personal and
                     professional. Here are a few of them.
-                    
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -138,7 +137,7 @@ export const Projects = () => {
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link className="tabs" eventKey="second">
-                          Projects
+                          Sample Projects
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>

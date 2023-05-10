@@ -29,7 +29,7 @@ export const Contact = () => {
     let response = await fetch(
       "https://flame-eth-backend-production.up.railway.app/contact",
       {
-        method: "POST",
+        method: "POST ",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
         },
