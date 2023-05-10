@@ -7,17 +7,18 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 import github from "../assets/img/github1.svg";
 import twitter from "../assets/img/twitter.svg";
 import flameEthLogo from "../assets/img/flameEthLogo.png";
+import "./styles/Footer.css";
 
 export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center">
+        <Row className=" fContainer">
           {/* <MailchimpForm /> */}
           <Col size={12} sm={6}>
             <img src={flameEthLogo} alt="Logo" />
           </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
+          <Col size={12} sm={6} className="text-center text-sm-end fSec">
             <div className="social-icon">
               <a
                 href="https://www.linkedin.com/in/ephraim-o-oladepo/"
