@@ -14,6 +14,7 @@ import EventGo from "../assets/img/webSnap/EventGo.png";
 import gigit from "../assets/img/webSnap/gigit.png";
 import Metapool from "../assets/img/webSnap/Metapool.png";
 import startup from "../assets/img/webSnap/startup.png";
+import ClickCart from "../assets/img/webSnap/ClickCart.png";
 import SuiteSavvy from "../assets/img/webSnap/SuiteSavvy.png";
 import { useNavigate } from "react-router-dom";
 import multisig from "../assets/img/webSnap/multisig.jpg";
@@ -56,6 +57,12 @@ export const Projects = () => {
       description: "Techie Hire Platform",
       imgUrl: gigit,
       link: "https://gig-it.vercel.app/",
+    },
+    {
+      title: "Click Cart",
+      description: "Ecommerce Platform",
+      imgUrl: ClickCart,
+      link: "https://click-cart-alpha.vercel.app/",
     },
     {
       title: "Suite Savvy",
@@ -123,7 +130,8 @@ export const Projects = () => {
                   <h2>Work Experience and Projects</h2>
                   <p>
                     I have worked on a number of projects, both personal and
-                    professional. Here are a few of them.
+                    professionally. Here are a few of them. Click on any of the
+                    projects to view more details.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
