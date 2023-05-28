@@ -20,6 +20,10 @@ import ether from "../assets/img/ether.svg";
 import html5 from "../assets/img/html5.svg";
 import css3 from "../assets/img/css3.svg";
 import git from "../assets/img/git.svg";
+import python from "../assets/img/python.svg";
+import mysql from "../assets/img/mysql.svg";
+import restapi from "../assets/img/restapi.png";
+import tailwindcss from "../assets/img/tailwindcss.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -55,6 +59,7 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
+                autoPlay={true}
                 className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <img src={javascript} alt="Image" />
@@ -69,6 +74,10 @@ export const Skills = () => {
                   <h5>Solidity</h5>
                 </div>
                 <div className="item">
+                  <img src={tailwindcss} alt="Image" />
+                  <h5>Tailwind CSS</h5>
+                </div>
+                <div className="item">
                   <img src={react} alt="Image" />
                   <h5>React.Js</h5>
                 </div>
@@ -81,12 +90,24 @@ export const Skills = () => {
                   <h5>Express</h5>
                 </div>
                 <div className="item">
+                  <img src={mysql} alt="Image" />
+                  <h5>MySQL</h5>
+                </div>
+                <div className="item">
                   <img src={mongodb} alt="Image" />
                   <h5>MongoDB</h5>
                 </div>
                 <div className="item">
+                  <img src={restapi} alt="Image" style={{ color: "white" }} />
+                  <h5>REST API</h5>
+                </div>
+                <div className="item">
                   <img src={aws} alt="Image" />
                   <h5>AWS</h5>
+                </div>
+                <div className="item">
+                  <img src={python} alt="Image" />
+                  <h5>Python</h5>
                 </div>
                 <div className="item">
                   <img src={evm} alt="Image" />
