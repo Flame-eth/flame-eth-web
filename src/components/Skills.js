@@ -24,6 +24,11 @@ import python from "../assets/img/python.svg";
 import mysql from "../assets/img/mysql.svg";
 import restapi from "../assets/img/restapi.png";
 import tailwindcss from "../assets/img/tailwindcss.svg";
+import nextjs from "../assets/img/nextjs.svg";
+import nestjs from "../assets/img/nestjs.svg";
+import docker from "../assets/img/docker.svg";
+import graphql from "../assets/img/graphql.svg";
+import postgresql from "../assets/img/postgresql.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -60,7 +65,9 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 autoPlay={true}
-                className="owl-carousel owl-theme skill-slider">
+                itemAriaLabel="Go to item"
+                className="owl-carousel owl-theme skill-slider"
+              >
                 <div className="item">
                   <img src={javascript} alt="Image" />
                   <h5>JavaScript</h5>
@@ -86,8 +93,28 @@ export const Skills = () => {
                   <h5>Node.Js</h5>
                 </div>
                 <div className="item">
+                  <img src={nextjs} alt="Image" />
+                  <h5>Next.Js</h5>
+                </div>
+                <div className="item">
+                  <img src={nestjs} alt="Image" style={{ color: "white" }} />
+                  <h5>Nest.Js</h5>
+                </div>
+                <div className="item">
+                  <img src={docker} alt="Image" />
+                  <h5>Docker</h5>
+                </div>
+                <div className="item">
+                  <img src={graphql} alt="Image" />
+                  <h5>GraphQL</h5>
+                </div>
+                <div className="item">
                   <img src={express} alt="Image" />
                   <h5>Express</h5>
+                </div>
+                <div className="item">
+                  <img src={postgresql} alt="Image" />
+                  <h5>PostgreSQL</h5>
                 </div>
                 <div className="item">
                   <img src={mysql} alt="Image" />
@@ -113,7 +140,7 @@ export const Skills = () => {
                   <img src={evm} alt="Image" />
                   <h5>EVM</h5>
                 </div>
-                <div className="item">
+                {/* <div className="item">
                   <img src={ether} alt="Image" />
                   <h5>Truffle</h5>
                 </div>
@@ -128,7 +155,7 @@ export const Skills = () => {
                 <div className="item">
                   <img src={ether} alt="Image" />
                   <h5>Ether.Js</h5>
-                </div>
+                </div> */}
                 <div className="item">
                   <img src={html5} alt="Image" />
                   <h5>HTML 5</h5>
