@@ -22,10 +22,31 @@ import bank from "../assets/img/webSnap/bank.jpg";
 import nft from "../assets/img/webSnap/nft.jpg";
 import auction from "../assets/img/webSnap/auction.jpg";
 import fund from "../assets/img/webSnap/fund.jpg";
+import carly from '../assets/img/webSnap/carly.png'
+import versatalk from '../assets/img/webSnap/versatalk.png' 
+import nftyield from '../assets/img/webSnap/yield.png'
 
 export const Projects = () => {
   const navigate = useNavigate();
   const experience = [
+    {
+      title: "Carly",
+      description: "Car Sharing Platform",
+      imgUrl: carly,
+      link: "https://carly-nu.vercel.app/",
+    },
+    {
+      title: "Versatalk",
+      description: "Multilingual Chat SAAS",
+      imgUrl: versatalk,
+      link: "https://versatalk.vercel.app/",
+    },
+    {
+      title: "NFTYield",
+      description: "Staking Farm",
+      imgUrl: nftyield,
+      link: "https://www.nftsyield.com/",
+    },
     {
       title: "IncubEX",
       description: "Decentralized Exchange",
@@ -49,6 +70,36 @@ export const Projects = () => {
       description: "Staking and Yeild Farm",
       imgUrl: Metapool,
       link: "https://www.nftsmetapool.com/home",
+    },
+    {
+      title: "GigIT",
+      description: "Techie Hire Platform",
+      imgUrl: gigit,
+      link: "https://gig-it.vercel.app/",
+    },
+    {
+      title: "Click Cart",
+      description: "Ecommerce Platform",
+      imgUrl: ClickCart,
+      link: "https://click-cart-alpha.vercel.app/",
+    },
+    {
+      title: "Suite Savvy",
+      description: "Booking and Reservation App",
+      imgUrl: SuiteSavvy,
+      link: "https://suite-savvy.vercel.app/",
+    },
+    {
+      title: "Startup Sphere",
+      description: "DeFi Crowdfunding Platform",
+      imgUrl: startup,
+      link: "https://startup-sphere.vercel.app/",
+    },
+    {
+      title: "Event Go",
+      description: "DeFi Ticketing Platform",
+      imgUrl: EventGo,
+      link: "https://event-go.vercel.app/",
     },
   ];
   const projects = [
@@ -83,38 +134,38 @@ export const Projects = () => {
       link: "https://event-go.vercel.app/",
     },
   ];
-  const contract = [
-    {
-      title: "Multi Signature Wallet",
-      description: "A Multi Signature Wallet",
-      imgUrl: multisig,
-      link: "https://github.com/Flame-eth/Multiparty-Ethereum-Wallet",
-    },
-    {
-      title: "Decentralized Bank",
-      description: "DeFi for purchase, sale and exchange of crypto assets",
-      imgUrl: bank,
-      link: "https://github.com/Flame-eth/Decentralized-Bank-DApp",
-    },
-    {
-      title: "Auction Contract",
-      description: "DeFi for bidding and auctioning",
-      imgUrl: auction,
-      link: "https://github.com/Flame-eth/Online-Auction-Smart-Contract",
-    },
-    {
-      title: "Fundraiser Contract",
-      description: "DeFi for crowd fundraising",
-      imgUrl: fund,
-      link: "https://github.com/Flame-eth/Fundraiser-Smart-Contract",
-    },
-    {
-      title: "Custom NFT Generator",
-      description: "Mining and minting of NFTs",
-      imgUrl: nft,
-      link: "https://github.com/Flame-eth/Sample-NFT-Collectible-ERC-721",
-    },
-  ];
+  // const contract = [
+  //   {
+  //     title: "Multi Signature Wallet",
+  //     description: "A Multi Signature Wallet",
+  //     imgUrl: multisig,
+  //     link: "https://github.com/Flame-eth/Multiparty-Ethereum-Wallet",
+  //   },
+  //   {
+  //     title: "Decentralized Bank",
+  //     description: "DeFi for purchase, sale and exchange of crypto assets",
+  //     imgUrl: bank,
+  //     link: "https://github.com/Flame-eth/Decentralized-Bank-DApp",
+  //   },
+  //   {
+  //     title: "Auction Contract",
+  //     description: "DeFi for bidding and auctioning",
+  //     imgUrl: auction,
+  //     link: "https://github.com/Flame-eth/Online-Auction-Smart-Contract",
+  //   },
+  //   {
+  //     title: "Fundraiser Contract",
+  //     description: "DeFi for crowd fundraising",
+  //     imgUrl: fund,
+  //     link: "https://github.com/Flame-eth/Fundraiser-Smart-Contract",
+  //   },
+  //   {
+  //     title: "Custom NFT Generator",
+  //     description: "Mining and minting of NFTs",
+  //     imgUrl: nft,
+  //     link: "https://github.com/Flame-eth/Sample-NFT-Collectible-ERC-721",
+  //   },
+  // ];
 
   return (
     <section className="project" id="project">
@@ -140,10 +191,10 @@ export const Projects = () => {
                       id="pills-tab">
                       <Nav.Item>
                         <Nav.Link className="tabs" eventKey="first">
-                          Work Experience
+                          Work Experience and Projects
                         </Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
+                      {/* <Nav.Item>
                         <Nav.Link className="tabs" eventKey="second">
                           Sample Projects
                         </Nav.Link>
@@ -152,7 +203,7 @@ export const Projects = () => {
                         <Nav.Link className="tabs" eventKey="third">
                           Smart Contracts
                         </Nav.Link>
-                      </Nav.Item>
+                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
@@ -166,7 +217,7 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">
+                      {/* <Tab.Pane eventKey="second">
                         <Row>
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
@@ -179,7 +230,7 @@ export const Projects = () => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
-                      </Tab.Pane>
+                      </Tab.Pane> */}
                     </Tab.Content>
                   </Tab.Container>
                 </div>

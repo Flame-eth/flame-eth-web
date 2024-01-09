@@ -169,9 +169,10 @@ span.navbar-text {
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
-  position: relative;
+  position: relative; 
   background-color: transparent;
   transition: 0.3s ease-in-out;
+  border-radius: 50px;
 }
 .navbar-text button span {
   z-index: 1;
@@ -185,7 +186,9 @@ span.navbar-text {
   left: 0;
   top: 0;
   z-index: -1;
+  border-radius: 50px;
   transition: 0.3s ease-in-out;
+
 }
 .navbar-text button:hover {
   color: #121212;
@@ -384,7 +387,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  /* width: 33.33333%; */
+  width: 100%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
