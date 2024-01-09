@@ -16,8 +16,10 @@ export const Banner = () => {
   const toRotate = [
     "Software Engineer",
     "Full Stack Developer",
+    "Frontend Developer",
+    "Backend Developer",
     "Blockchain Engineer",
-    "Smart Contract Developer",
+    // "Smart Contract Developer",
   ];
   const period = 2000;
 
